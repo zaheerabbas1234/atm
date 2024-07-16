@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>APM</title>
+  </head>
+  <body>
+    <audio id="test" src="./assets/beep.mp3"></audio>
+    <audio class="success" src="./assets/success.mp3"></audio>
+    <audio class="failed" src="./assets/failed.mp3"></audio>
+    <div class="root">
+      <div class="apmInterface">
+        <h1 class="dep">Deposit Amount</h1>
+        <div class="depositController">
+          <input type="number" name="" id="cash" placeholder="Enter Amount" />
+          <input type="number" id="confirmCash" placeholder="Confirm Amount" />
+          <input type="submit" value="Deposit" onclick="deposit()" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
